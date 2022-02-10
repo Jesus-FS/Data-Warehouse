@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style/contactos.css" type="text/css" rel="stylesheet">
+    <title>Data Warehouse - Nuevo Contacto</title>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="logo">
+        <div class="menu_opciones">
+            <a href="contactos.html" class="marcador">Contactos</a>
+            <a href="companias.html">Compañías</a>
+            <a href="users.html" class="" id="usuariosMenu">Usuarios</a>
+            <a href="region.html">Región/Ciudad</a>
+        </div>
+    </header>
+    <section class="title">
+        <h2>Contactos</h2>
+    </section>
+    <section class="back">
+        <a class="button" href="/contactos.html">Volver Atrás</a>
+    </section>
+
+
+    <section class="center">
+        <h2>Nuevo Contacto</h2>
+        <form action="">
+            <div class="form">
+                <p>Nombre*</p>
+                <label for="nombre"></label>
+                <input type="text" id="nombre" required>
+            </div>
+            <div class="form">
+                <p>Apellido*</p>
+                <label for="apellido"></label>
+                <input type="text" id="apellido" required>
+            </div>
+            <div class="form">
+                <p>Cargo*</p>
+                <label for="cargo"></label>
+                <input type="text" id="cargo" required>
+            </div>
+            <div class="form">
+                <p>Email*</p>
+                <label for="email"></label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form">
+                <p>Companía*</p>
+                <select id="compania2" name="compania" ></select>
+            </div>
+            <div class="form">
+                <p>Región</p>
+                <select id="regiones1" name="region" onchange="cambioRegion1();">
+                    <option value="region" ></option>
+                </select>
+            </div>
+            <div class="form">
+                <p>País</p>
+                <select id="paises1" name="pais" onchange="cambioPais1();">
+                    <option value="pais" ></option>
+                </select>
+            </div>
+            <div class="form">
+                <p>Ciudad</p>
+                <select id="ciudades1" name="ciudad">
+                    <option value="ciudad"></option>
+                </select>
+            </div>
+            <div class="form">
+                <p>Dirección</p>
+                <label for="compania"></label>
+                <input type="text" id="direccion" required>
+                
+            </div>
+            <div class="form">
+                <p>Canal de Contacto</p>
+                <select id="canal" name="canalContacto" >
+                    <option value="telefono">Telefono</option>
+                    <option value="whatsapp">Whatsapp</option>
+                    <option value="instagram">Instagram</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="linkedin">Linkedin</option>
+                </select>
+                
+            </div>
+            <div class="form">
+                <p>Cuenta de Usuario</p>
+                <label for="compania"></label>
+                <input type="text" id="cuenta" >
+                
+
+            </div>
+            <div class="form">
+                <p>Preferencias</p>
+                <select id="preferencias" name="preferencias" >
+                    <option value="sinPreferencias">Sin Preferencias</option>
+                    <option value="canalFavorito">Canal Favorito</option>
+                    <option value="noMolestar">No Molestar</option>
+                </select>
+               
+
+            </div>
+            <input class="crear button"  type="submit" value="crear" id="btn-crear" >
+        </form>
+    </section>
+
+
+    <section class="center">
+        <h2>Modificar Contacto</h2>
+        <form class="form" >
+            <div class="form">
+                <label for="contactosModificar">Seleccione un contacto a modificar:</label>
+                <select id="contactosM2" name="contactosModificar" >
+                
+                </select>
+            </div>
+           
+            <div class="form">
+                <p>Nombre*</p>
+                <label for="nombre"></label>
+                <input type="text" id="nombre2" required>
+            </div>
+            <div class="form">
+                <p>Apellido*</p>
+                <label for="apellido"></label>
+                <input type="text" id="apellido2" required>
+            </div>
+            <div class="form">
+                <p>Cargo*</p>
+                <label for="cargo"></label>
+                <input type="text" id="cargo2" required>
+            </div>
+            <div class="form">
+                <p>Email*</p>
+                <label for="email"></label>
+                <input type="email" id="email2" required>
+            </div>
+            <div class="form">
+                <p>Companía*</p>
+                <select id="compania3" name="compania" ></select>
+       
+            </div>
+            <div class="form">
+                <p>Región</p>
+                <select id="regiones2" name="region" onchange="cambioRegion2();">
+                </select>
+            </div>
+            <div class="form">
+                <p>País</p>
+                <select id="paises2" name="pais" onchange="cambioPais();">
+                    
+                </select>
+            </div>
+            <div class="form">
+                <p>Ciudad</p>
+                <select id="ciudades2" name="ciudad">
+                    
+                </select>
+            </div>
+            <div class="form">
+                <p>Dirección</p>
+                <label for="compania"></label>
+                <input type="text" id="direccion2" required>
+                
+            </div>
+            <div class="form">
+                <p>Canal de Contacto</p>
+                <select id="canal2" name="canalContacto" >
+                    <option value="telefono">Telefono</option>
+                    <option value="whatsapp">Whatsapp</option>
+                    <option value="instagram">Instagram</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="linkedin">Linkedin</option>
+                </select>
+                
+            </div>
+            <div class="form">
+                <p>Cuenta de Usuario</p>
+                <label for="cuenta"></label>
+                <input type="text" id="cuenta2" >
+                
+
+            </div>
+            <div class="form">
+                <p>Preferencias</p>
+                <select id="preferencias2" name="preferencias" >
+                    <option value="sinPreferencias">Sin Preferencias</option>
+                    <option value="canalFavorito">Canal Favorito</option>
+                    <option value="noMolestar">No Molestar</option>
+                </select>
+            </div>
+            
+
+            <button class="button" id="btn-modificar"'>Modificar</button>
+           
+        </form>
+    </section>
+
+
+
+    <section class="center">
+        <h2>Eliminar Contacto </h2>
+        <form class="form" >
+            <div class="form">
+                <label for="contactoEliminar">Seleccione un contacto a eliminar:</label>
+                <select id="contactosE3" name="contactoEliminar" >
+                
+                </select>
+            </div>
+            <button id="btn-eliminar" class="button">Eliminar</button>
+            
+        </form>
+    </section>
+    <footer>
+        <a class="menuAbajo" href="contactos.html">Contactos</a>
+        <a class="menuAbajo" href="companias.html">Compañías</a>
+        <a class="menuAbajo" href="users.html" class="" id="usuariosMenuFooter">Usuarios</a>
+        <a class="menuAbajo" href="region.html">Región/Ciudad</a>
+
+        <p>Trabajo Practico Data Warehouse - Macarena Molina</p>
+    </footer>
+    <script src="javascript/modificarContactos.js" async></script> 
+</body>
+</html>

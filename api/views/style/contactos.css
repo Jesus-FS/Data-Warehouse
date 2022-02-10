@@ -1,0 +1,279 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    margin: 1 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #006241;
+    padding: 20px;
+}
+
+.ocultar{
+    display: none;
+}
+
+
+header .menu_opciones{
+    display: flex;
+    flex: row;
+    justify-content: flex-end;
+    background-color: #006241;
+}
+
+header img {
+    width: 55px;
+    height: 55px;
+    border: 2px solid #EEECE0;
+    border-radius: 35px;
+}
+
+.derecha{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+button, .button{
+    margin: 10px;
+    background-color: #aea985;
+    margin: 15px; 
+    border-radius: 25px;
+    border-color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+}
+
+a {
+    margin: 5px;
+    padding-left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+a ::after{
+    color: white;
+}
+
+a:hover{
+    font-weight: bolder;
+}
+
+
+
+.contactos {
+    display: flex;
+    
+}
+
+.marcador {
+    font-weight: bolder;
+    text-decoration: underline; 
+}
+
+.flexar{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.flexarRow{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.title {
+    font-size: 25px !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    color: #523629;
+    background-color: #EEECE0;
+    height: 50px;
+    padding: 25px;
+    margin: auto;
+}
+
+form {
+    margin: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+form .form, form label, form select{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 400px;
+    align-items: center;
+    text-align: center;
+}
+
+form select {
+    border-radius: 25px;
+    margin: 5px;
+    align-items: center;
+}
+
+form input{
+    margin: 5px; 
+    width: 250px;
+    height: auto;
+    text-align: center;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    align-items: center;
+    text-align: center;
+}
+
+.none{
+    border: none;
+}
+
+.borde{
+    border: solid #0a5703 2px;
+    border-radius: 25px;
+    width: auto;
+}
+
+.borde input {
+    border: none;
+} 
+
+i{
+    margin: 5px;
+}
+
+.back {
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.center, .center .form, .form label, .form label select{
+    margin: auto;
+    padding: 10px;
+    text-align: center;   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+}
+
+.alto{
+    height: 500px;
+
+}
+
+footer{
+    padding: 10px;
+    padding-left: 50px;
+    background-color: #006241;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+a .menuAbajo {
+   
+    margin: 5px;
+    padding: 3px;
+    color: white;
+    text-decoration: none;
+
+}
+
+footer p {
+    color: lightgrey;
+    margin: 25px;
+}
+
+.ocultar{
+    display: none;
+}
+
+.resultado {
+    border-radius: 25px;
+    padding: 15px;
+    border:#006241 solid 3px;
+    width: auto;
+}
+
+.resultado .titulos {
+    display: grid;
+    grid-template-columns: 70px 200px 200px 200px 300px 200px;
+    grid-template-rows: auto auto auto auto auto auto;
+}
+
+.resultadoApi{
+    display: grid;
+    grid-template-columns:  70px 200px 200px 200px 300px 200px;
+    grid-template-rows: auto auto auto auto auto auto;
+
+}
+
+
+@media screen and (min-width: 600px) and (max-width:699px) {
+
+
+
+    .alto{
+        height: 200px;
+    }
+    
+    
+    
+}
+
+
+
+@media screen and (min-width: 700px) {
+
+
+
+.alto{
+    height: 200px;
+}
+
+
+
+}
+
+
+@media screen and (min-width: 1024px) {
+
+
+    .alto{
+        height: 528px;
+    }
+
+    .resultado {
+        border-radius: 25px;
+        padding: 15px;
+        border:#006241 solid 3px;
+        width: 90%;
+    }
+    
+    
+}
+
+@media screen and (min-width: 1080px ) {
+
+
+    .alto{
+        height: 1080px;
+    }
+    
+    .resultado {
+        border-radius: 25px;
+        padding: 15px;
+        border:#006241 solid 3px;
+        width: 90%;
+    }
+    
+}
